@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UserApi</name>
+    </assembly>
+    <members>
+        <member name="T:UserApi.Controllers.UsersController">
+            <summary>
+            Uploads data from a .csv file to the database.
+            </summary>
+        </member>
+        <member name="M:UserApi.Controllers.UsersController.GetUsers(System.Int32,System.String)">
+            <summary>
+            Get users sorted by username in ascending or descending order.
+            </summary>
+            <param name="count">Number of users to return.</param>
+            <param name="sortDirection">Sorting direction: "asc" for ascending, "desc" for descending.</param>
+            <returns>A list of users.</returns>
+        </member>
+        <member name="M:UserApi.Controllers.UsersController.UploadCsv(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Uploads a CSV file containing user data to the database.
+            </summary>
+            <param name="file">The CSV file to upload.</param>
+            <returns>A response indicating the result of the upload.</returns>
+        </member>
+        <member name="T:UserApi.Migrations.AddUsersTable">
+            <inheritdoc />
+        </member>
+        <member name="M:UserApi.Migrations.AddUsersTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:UserApi.Migrations.AddUsersTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:UserApi.Migrations.AddUsersTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,4 @@
+username,useridentifier,age,city,phonenumber,email
+user1,testuser1,18,Tashkent ,998778882211,user1@mail.test
+user2,testuser2,19,Tashkent ,998223334455,user2@mail.test
+user3,testuser3,20,Tashkent ,998334445566,user3@mail.test
